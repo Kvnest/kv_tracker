@@ -3,11 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Log</title>
+    <title>Daily Tracker</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Daily Log</h1>
-    <p>Date and Time (UTC): 2026-03-22 14:22:31</p>
-    <p>Logged in User: Kvnest</p>
+    <header>
+        <h1>Daily Tracker App</h1>
+    </header>
+    <main>
+        <section id="logging">
+            <h2>Logging</h2>
+            <textarea id="log-input" placeholder="Enter your log here..."></textarea>
+            <button id="log-submit">Submit Log</button>
+        </section>
+        <section id="study-sessions">
+            <h2>Study Sessions</h2>
+            <form id="study-form">
+                <input type="text" id="study-subject" placeholder="Subject">
+                <input type="time" id="study-start" placeholder="Start Time">
+                <input type="time" id="study-end" placeholder="End Time">
+                <button type="submit">Add Study Session</button>
+            </form>
+        </section>
+        <section id="classes">
+            <h2>Classes</h2>
+            <ul id="class-list"></ul>
+        </section>
+        <section id="thesis-tracking">
+            <h2>Thesis Tracking</h2>
+            <input type="text" id="thesis-topic" placeholder="Thesis Topic">
+            <button id="thesis-submit">Add Thesis</button>
+        </section>
+        <section id="research">
+            <h2>Research</h2>
+            <textarea id="research-input" placeholder="Research Notes..."></textarea>
+            <button id="research-submit">Submit Research</button>
+        </section>
+        <section id="wellness">
+            <h2>Wellness</h2>
+            <textarea id="wellness-input" placeholder="Wellness Journal..."></textarea>
+            <button id="wellness-submit">Submit Wellness</button>
+        </section>
+        <button id="export-csv">Export to CSV</button>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
